@@ -21,7 +21,7 @@ st.markdown("Lade ein Bild hoch – das Modell sagt dir, was es sieht.")
 @st.cache_resource
 def load_my_model():
     try:
-        model = load_model("keras_Model.h5", compile=False)
+        model = load_model("keras_model.h5", compile=False)
         class_names = open("labels.txt", "r").readlines()
         class_names = [name.strip() for name in class_names]  # sauber machen
         return model, class_names
