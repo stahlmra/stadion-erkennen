@@ -1,0 +1,3 @@
+0 München
+1 Hamburg
+2 Stuttgart
